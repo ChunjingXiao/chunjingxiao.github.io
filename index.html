@@ -128,15 +128,17 @@
             color: white;
         }
         .narrow-paragraph {
-    width: 80%;
-    max-width: 650px;  /* 最佳阅读宽度 */
-    margin: 1em auto;  /* 垂直间距+水平居中 */
-    line-height: 1.6;  /* 行高为字体1.6倍 */
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-size: 16px;
-    color: #333;       /* 深灰更易读 */
-    text-align: justify; /* 两端对齐 */
-    letter-spacing: 0.5px; /* 字间距微调 */
+    width: 90%;
+    max-width: 720px;
+    margin: 1.5rem auto;
+    line-height: 1.7;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: clamp(16px, 2vw, 18px); /* 响应式字体 */
+    color: #222;
+    text-align: left;
+    hyphens: auto;    /* 自动断词 */
+    padding: 0 15px;
+    text-rendering: optimizeLegibility; /* 字体渲染优化 */
         }
 
     </style>
